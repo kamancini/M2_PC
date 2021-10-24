@@ -1,4 +1,108 @@
-body {
-background: blue;
+body{
+  background: snow;
 }
+
+header{
+  margin: 2%
+  padding: 2%
+
+}
+
+.paint{
+  height: 800px;
+  background: black;
+  margin:0 8% 0 8%;
+  padding: 1%;
+}
+
+#first{
+  height: 800px;
+  width: 30%;
+  float: right;
+
+}
+
+#second{
+  height: 300px;
+  width: 70%;
+}
+
+#third{
+
+  height: 350px;
+  width: 70%;
+  margin-top: 2%;
+}
+
+#fourth{
+  background: grey;
+  height: 110px;
+  width: 70%;
+  margin-top: 2%;
+}
+
+.one{
+  height: 25%;
+  width: 98%;
+}
+
+.two{
+  height: 70%;
+  width:30%;
+  margin-top: 2%;
+}
+
+.three{
+  height:70%;
+  width: 98%;
+  margin-top: 2%;
+}
+
+.four{
+ height: 70%;
+ width: 65%;
+ margin: 2% 2% 0 0;
+ float: right;
+}
+
+.five{
+
+}
+
+.red{
+  background: red;
+}
+
+.blue{
+  background:blue;
+}
+
+.yellow{
+background: yellow;
+}
+
+.white{
+background: white;
+}
+
+.black{
+  background: black;
+}
+
+article{
+  margin-top: 1%;
+}
+
+h1 {
+text-align: center;
+font-family: 'Zen Antique', serif, ;
+font-size: 70px;
+letter-spacing: 10px;
+
+}
+
+p{
+font-family: 'Urbanist', sans-serif;
+}
+
   
