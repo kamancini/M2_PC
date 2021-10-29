@@ -51,6 +51,11 @@
       font-family: 'Work Sans', sans-serif;
 
     }
+ 
+    .desc2{
+	text-align: center;
+	padding:0 200px 0 200px;
+    }
 
     .video-container {
       height: 320px;
