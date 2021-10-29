@@ -27,70 +27,235 @@
       </div>
 
       <div class="desc">
-        
+
         <h2>*descripción de la pagina blablablalba*</h2>
-      
+
       </div>
 
     </header>
     </div>
 
     <div class="desc2">
-      
-      <h3>Descripción más larga de lo que la página contiene balblablalbalblablablalblalbalblablalbalblalbalba </h3>
+
+      <h3>Piet Mondrian (nacido como Pieter Cornelis Mondriaan; Amersfoort, 7 de marzo de 1872-Nueva York, 1 de febrero de 1944) fue un pintor vanguardista neerlandés.
+        <br>Fue miembro de la corriente De Stijl y fundador del neoplasticismo, junto con Theo van Doesburg.
+        <br>Evolucionó desde el naturalismo y el simbolismo hasta la abstracción, de la cual es el principal representante inaugural junto a los rusos Vasili Kandinski y Kazimir Malévich.
+      </h3>
 
     </div>
+    	<button id="button" class= "button button" type="button" onclick="alert('Hello World!')">Galeria</button>
 
-    <section id="cuerpo">
-
-      
-    </section>
-
-
-    <div class="paint">
-        <section id="first">
-        <article class="red one" >
-          <p>1</p>
-        </article>
-        <article class="white three">
-          <p>2</p>
-        </article>
-        </section>
-
-        <section id="second">
-        <article class="blue one">
-          <p>3</p>
-        </article>
-        <article class="yellow four">
-          <p>4</p>
-        </article>
-        <article class="white two">
-          <p>5</p>
-        </article>
-
-        </section>
-
-        <section id="third">
-          <article class="white one">
-            <p>6</p>
-          </article>
-          <article class="white four">
-            <p>7</p>
-          </article>
-          <article class="blue two">
-            <p>8</p>
-          </article>
-        </section>
-        <section id="fourth">
-          <article class="">
-            <p>9</p>
-          </article>
-        </section>
-
+    <!--galería de imágenes-->
+    <div class="row">
+      <div class="column">
+        <img src="imagenes/1900 piet.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        <img src="imagenes/1910 red tree.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        <img src="imagenes/1911 tree.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="imagenes/1904 mill.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        <img src="imagenes/1908 mill.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="imagenes/1912 apple tree.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        <img src="imagenes/1914 composition oval.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+        <img src="imagenes/1917 composition c.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="imagenes/1913 grey.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+        <img src="imagenes/1918 composition grey.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="imagenes/1921 tableu.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+        <img src="imagenes/1943 trafalgar.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="imagenes/1923 composition.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+        <img src="imagenes/1943 broadway.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+        <img src="imagenes/1944 victory.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+      </div>
     </div>
+    <!-- fin galería -->
 
-    <footer>
-    </footer>
-    </div>
+    <!-- The Modal/Lightbox / ventanas pop up-->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+<!-- imagen 1 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1900 piet.jpg" style="width:50%">
+        </div>
+
+<!-- imagen 2 -->
+
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1904 mill.jpg" style="width:50%">
+        </div>
+<!-- imagen 3 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1908 mill.jpg" style="width:50%">
+        </div>
+<!-- imagen 4 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1910 red tree.jpg" style="width:50%">
+        </div>
+<!-- imagen 5 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1911 tree.jpg" style="width:50%">
+        </div>
+<!-- imagen 6 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1912 apple tree.jpg" style="width:50%">
+        </div>
+<!-- imagen 7 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1913 grey.jpg" style="width:50%">
+        </div>
+<!-- imagen 8 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1914 composition oval.jpg" style="width:50%">
+        </div>
+<!-- imagen 9 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1918 composition grey.jpg" style="width:50%">
+        </div>
+<!-- imagen 10 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1917 composition c.jpg" style="width:50%">
+        </div>
+<!-- imagen 11 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1921 tableu.jpg" style="width:50%">
+        </div>
+<!-- imagen 12 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1923 composition.jpg" style="width:50%">
+        </div>
+<!-- imagen 13 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1943 trafalgar.jpg" style="width:50%">
+        </div>
+<!-- imagen 14 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1943 broadway.jpg" style="width:50%">
+        </div>
+<!-- imagen 15 -->
+        <div class="mySlides">
+          <div class="caption-container">
+            <h3 class="tituloSlide">Titulo</h3>
+            <p id="caption">HELLO</p>
+          </div>
+          <img src="imagenes/1944 victory.jpg" style="width:50%">
+        </div>
+
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+    <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+
   </body>
 </html>
